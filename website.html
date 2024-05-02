@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Tech</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png">
+    <style>
+        .shopping-cart {
+            position: relative;
+            top: 5px;
+            margin-left: 10px;
+        }
+
+        .shopping-cart-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .cart-counter {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 50%;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>The Way you feel The Gift Cards </h1>
+    </div>
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a>Shop ▼</a>
+        <div class="navbar-right">
+            <a href="login.html">
+                <button class="login-button">Login</button>
+            </a>
+            <div class="shopping-cart">
+                <a href="shopping cart.html?cartCounter=1" id="shoppingCartLink">
+                    <img src="https://cdn-icons-png.freepik.com/512/1413/1413908.png" alt="Shopping Cart" class="shopping-cart-icon">
+                  </a>
+                <span class="cart-counter">0</span>
+            </div>
+            
+        </div>
+    </nav>
+    
+	<div class="content">
+        <div class="card">
+            <h2>Gift Card</h2>
+            <img src="https://gaming-cdn.com/images/products/1048/616x353/steam-gift-card-50-50-usd-card-pc-spil-steam-united-states-cover.jpg?v=1674145728" alt="Gift Card">
+            <p>Unlock a world of gaming possibilities with Steam gift cards! Perfect for gamers of all ages, they make great gifts and hassle-free purchases. Get yours today and dive into endless entertainment on Steam!			</p>
+            <button class="add-to-cart-button" onclick="incrementCartCounter()">Add to Cart</button>
+            <a href="contactus.html">
+                <button class="contact-button">Contact Us</button>
+            </a>
+                
+              <body>
+                  
+            
+            <script>
+                let cartCounter = 0;
+
+                function incrementCartCounter() {
+                    cartCounter++;
+                    document.querySelector('.cart-counter').textContent = cartCounter;
+                }
+            </script>
+                  
+            
+</body>
+</html>

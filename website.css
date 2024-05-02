@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #397c81;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between; /* Add this line */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #3285a3;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #fc0505;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.card button {
+    background-color: #fc0505;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+
+.login-button {
+    background-color: #fc0505;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .contact-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    margin-left: 20px;
+  }
+  
+  .contact-button:hover {
+    background-color: #45a049;
+  }
+
+  .page {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .page-enter {
+    opacity: 1;
+  }
+  
+  .page-exit {
+    opacity: 0;
+  }
+
+  .shopping-cart {
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.shopping-cart:hover {
+    transform: translateY(-5px);
+}
+
+.shopping-cart-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-counter {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 50%;
+    font-size: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.shopping-cart:focus .cart-counter {
+    transform: translateY(-10px);
+}
+
+
+  

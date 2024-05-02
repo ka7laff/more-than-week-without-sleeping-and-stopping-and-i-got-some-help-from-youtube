@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="shopping cart.css">
+  <title>Shopping Cart</title>
+</head>
+<body>
+  <div id="cart" class="content">
+    <h2>Your Cart</h2>
+    <div class="product">
+      <img src="https://gaming-cdn.com/images/products/1048/616x353/steam-gift-card-50-50-usd-card-pc-spil-steam-united-states-cover.jpg?v=1674145728" alt="50 Dollar Gift Card">
+      <div class="product-info">
+        <h3>50 Dollar Gift Card</h3>
+        <p>$50.00</p>
+        <div class="product-quantity">
+            <div class="product-actions">
+              <button class="action-button decrease">-</button>
+              <span class="quantity">1</span>
+              <button class="action-button increase">+</button>
+            </div>
+            <script>
+
+            
+const decreaseButtons = document.querySelectorAll('.decrease');
+const increaseButtons = document.querySelectorAll('.increase');
+const quantitySpans = document.querySelectorAll('.quantity');
+
+
+decreaseButtons.forEach((button, index) => {
+
+  button.addEventListener('click', () => {
+
+    const currentQuantity = parseInt(quantitySpans[index].innerText);
+
+
+    if (currentQuantity > 1) {
+   
+      quantitySpans[index].innerText = currentQuantity - 1;
+    }
+  });
+});
+
+
+increaseButtons.forEach((button, index) => {
+
+  button.addEventListener('click', () => {
+
+    const currentQuantity = parseInt(quantitySpans[index].innerText);
+
+    quantitySpans[index].innerText = currentQuantity + 1;
+  });
+});
+            </script>
+          </div>
+          
+          <div class="order-button-container">
+            <a href="dONT TOUCH.html">
+              <button class="order-button">Order</button>
+
+              
+      
+    </div>
+  </div>
+</body>
+</html>
